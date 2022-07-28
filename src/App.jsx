@@ -10,13 +10,16 @@ import Marvel from './components/categoriasFunkos/Marvel';
 import DC from './components/categoriasFunkos/Dc';
 import StrangerThings from './components/categoriasFunkos/StrangerThings';
 import Login from './components/Login';
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
+
   return (
     <Router>
     <div className="container p-2 mb-2 bg-secondary mw-100">
       <NavBar />
+      <ItemListContainer />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/products" component={Productos} />

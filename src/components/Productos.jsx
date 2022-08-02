@@ -1,5 +1,6 @@
 import React from 'react'
 import imgBuzz from '../img/ToyStoryBuzzLightyear169.jpeg'
+import ItemCount from './ItemCount'
 
 import './Productos.css'
 
@@ -24,7 +25,10 @@ const Productos = ({image, name, price, description}) => {
         <p className="cardPrice">${datosProducto.price}</p>
         <p className="cardDescription">{description}</p>
       </div>
-      <button className="btn btn-success text-light">Ver Producto</button>
+      <button className="btn btn-success text-light mb-3">Ver Producto</button>
+
+<ItemCount initial={1} stock={11} />
+
     </div>
     </>
   )

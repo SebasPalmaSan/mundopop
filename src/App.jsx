@@ -1,17 +1,17 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Productos from './components/Productos';
-import Home from './components/Home';
-import NavBar from './components/NavBar';
-import Register from './components/Register';
+import Productos from './components//Products/Productos';
+import Home from './components//Home/Home';
+import NavBar from './components//NavBar/NavBar';
+import Register from './components//Login/Register';
 import Rock from './components/categoriasFunkos/Rock';
 import Got from './components/categoriasFunkos/Got';
 import Disney from './components/categoriasFunkos/Disney';
 import Marvel from './components/categoriasFunkos/Marvel';
 import DC from './components/categoriasFunkos/Dc';
 import StrangerThings from './components/categoriasFunkos/StrangerThings';
-import Login from './components/Login';
-import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
+import Login from './components/Login/Login';
+import ItemListContainer from './components/ItemList/ItemListContainer';
+
 
 
 function App() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import dataProducto from '../../data/data.js'
-import Productos from '../Products/Productos.jsx'
+import ItemList from './ItemList.jsx'
 
 
 const getProducts = () => {
@@ -23,18 +23,8 @@ const ItemListContainer = () => {
   return (
     
     <div className="rounded mx-auto d-block">
-      <h1 className="text-center text-light">Listado de Productos</h1>
-      {
-        data.map((product) => {
-          return (<Productos 
-            key={product.id} {...product}
-            image={product.image}
-            name={product.name}
-            price={product.price}
-          />
-          )
-        })
-      }
+      <h1 className="text-center text-light">Productos Destacados</h1>
+      <ItemList data={data} />
     </div>
   )
 }

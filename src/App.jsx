@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Productos from './components//Products/Productos';
+import Item from './components//ItemList/Item';
 import Home from './components//Home/Home';
 import NavBar from './components//NavBar/NavBar';
 import Register from './components//Login/Register';
@@ -25,7 +25,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/products" component={Productos} />
+        <Route path="/products" component={Item} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/categoriasFunkos/rock" component={Rock} />
@@ -35,6 +35,7 @@ function App() {
         <Route path="/categoriasFunkos/dc" component={DC} />
         <Route path="/categoriasFunkos/strangerThings" component={StrangerThings} />
       </Switch>
+
     </div>
     </Router>
   );

@@ -1,6 +1,6 @@
-![Screenshot 2022-08-02 at 16-11-28 Mundo Pop!](https://user-images.githubusercontent.com/93328462/182454802-1ecec105-b369-4c06-8061-83ee61d7bef4.png)
+![Screenshot 2022-08-06 at 16-30-49 Mundo Pop!](https://user-images.githubusercontent.com/93328462/183263594-a25980d4-65af-4ef3-9e9a-c74608ed7e70.png)
 
-![Screenshot 2022-08-02 at 16-09-34 Mundo Pop!](https://user-images.githubusercontent.com/93328462/182454789-9583be8c-a700-4985-a313-77a7cd32153d.png)
+![Screenshot 2022-08-06 at 16-30-14 Mundo Pop!](https://user-images.githubusercontent.com/93328462/183263599-ab22ccae-66c9-4565-943b-a3ffcbbfd579.png)
 
 Mundo Pop! es una tienda online de FunkoPop!. Creada y dirijida a los fanaticos de los Funkos!
 Proyecto Realizado con React como proyecto de Coderhouse

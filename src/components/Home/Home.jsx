@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ItemListContainer from '../ItemList/ItemListContainer'
 
 import './Home.css'
 
 const Home = () => {
   return (
+    <>
+    <ItemListContainer />
     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active carrousel">
@@ -26,6 +29,7 @@ const Home = () => {
             <span className="sr-only">Next</span>
           </Link>
     </div>
+    </>
   )
 }
 

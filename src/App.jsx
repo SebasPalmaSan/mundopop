@@ -3,14 +3,15 @@ import Item from './components//ItemList/Item';
 import Home from './components//Home/Home';
 import NavBar from './components//NavBar/NavBar';
 import Register from './components//Login/Register';
-import Rock from './components/categoriasFunkos/Rock';
-import Got from './components/categoriasFunkos/Got';
-import Disney from './components/categoriasFunkos/Disney';
-import Marvel from './components/categoriasFunkos/Marvel';
-import DC from './components/categoriasFunkos/Dc';
-import StrangerThings from './components/categoriasFunkos/StrangerThings';
+import Rock from './components/Categories/Rock';
+import Got from './components/Categories/Got';
+import Disney from './components/Categories/Disney';
+import Marvel from './components/Categories/Marvel';
+import DC from './components/Categories/Dc';
+import StrangerThings from './components/Categories/StrangerThings';
 import Login from './components/Login/Login';
 import ItemListContainer from './components/ItemList/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
 
 
@@ -20,21 +21,22 @@ function App() {
     <Router>
     <div className="container p-2 mb-2 bg-secondary mw-100">
       <NavBar />
-      <ItemListContainer />
+      {/* <ItemListContainer /> */}
+      <ItemDetailContainer />
 
 
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/products" component={Item} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
-        <Route path="/categoriasFunkos/rock" component={Rock} />
-        <Route path="/categoriasFunkos/got" component={Got} />
-        <Route path="/categoriasFunkos/disney" component={Disney} />
-        <Route path="/categoriasFunkos/marvel" component={Marvel} />
-        <Route path="/categoriasFunkos/dc" component={DC} />
-        <Route path="/categoriasFunkos/strangerThings" component={StrangerThings} />
-      </Switch>
+        <Route path="/categories/rock" component={Rock} />
+        <Route path="/categories/got" component={Got} />
+        <Route path="/categories/disney" component={Disney} />
+        <Route path="/categories/marvel" component={Marvel} />
+        <Route path="/categories/dc" component={DC} />
+        <Route path="/categories/strangerThings" component={StrangerThings} />
+      </Switch> */}
 
     </div>
     </Router>

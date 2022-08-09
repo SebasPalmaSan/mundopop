@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import dataProducto from '../../data/data.js'
+import dataProducto from '../../data/data'
 import ItemList from './ItemList.jsx'
 
 

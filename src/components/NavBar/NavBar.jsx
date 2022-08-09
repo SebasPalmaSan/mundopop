@@ -31,17 +31,17 @@ const NavBar = () => {
                             CATEGORÍAS
                         </Link>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/Rock">Rock</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Rock">Rock</Link>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/Got">Game Of Thrones</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Got">Game Of Thrones</Link>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/Disney">Disney</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Disney">Disney</Link>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/Marvel">Marvel</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Marvel">Marvel</Link>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/Dc">DC</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Dc">DC</Link>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categoriasFunkos/StrangerThings">Stranger Things</Link>
+                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/StrangerThings">Stranger Things</Link>
                     </div>
                 </li>
                 <li className="nav-item">

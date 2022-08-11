@@ -11,7 +11,7 @@ const Item = ({id, image, name, price, description}) => {
       <div className="tarjeta">
   
       <div className="card text-white bg-success mb-3 cardProduct">
-        <div className="cardImage">
+        <div className="cardImage p-1">
           <img src={image} alt="img" max-width="100%" height="92%" />
         </div>
         <div>

@@ -23,7 +23,7 @@ const ItemListContainer = () => {
   return (
     
     <div className=" mx-auto d-block bg-dark">
-      <h1 className="text-center text-light m-5">Productos Destacados</h1>
+      <h1 className="text-center text-light m-5">PRODUCTOS DESTACADOS</h1>
       <ItemList data={data} />
     </div>
   )

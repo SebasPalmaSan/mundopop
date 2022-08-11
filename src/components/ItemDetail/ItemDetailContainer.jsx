@@ -15,6 +15,8 @@ const getItem = () => {
 const ItemDetailContainer = () => {
     const [data, setData] = useState([])
 
+    // const id = useParams().id
+
     useEffect(() => {
         getItem().then(products => {
             setData(products[0])

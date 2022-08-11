@@ -22,12 +22,12 @@ function App() {
     <div className="container p-2 mb-2 bg-secondary mw-100">
       <NavBar />
       {/* <ItemListContainer /> */}
-      <ItemDetailContainer />
+      {/* <ItemDetailContainer /> */}
 
 
-      {/* <Switch>
+      <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/products" component={Item} />
+        <Route path="/products/:id" component={Item} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/categories/rock" component={Rock} />
@@ -36,7 +36,7 @@ function App() {
         <Route path="/categories/marvel" component={Marvel} />
         <Route path="/categories/dc" component={DC} />
         <Route path="/categories/strangerThings" component={StrangerThings} />
-      </Switch> */}
+      </Switch>
 
     </div>
     </Router>

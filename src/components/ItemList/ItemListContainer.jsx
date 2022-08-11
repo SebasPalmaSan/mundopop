@@ -22,8 +22,8 @@ const ItemListContainer = () => {
 
   return (
     
-    <div className="rounded mx-auto d-block">
-      <h1 className="text-center text-light">Productos Destacados</h1>
+    <div className=" mx-auto d-block bg-dark">
+      <h1 className="text-center text-light m-5">Productos Destacados</h1>
       <ItemList data={data} />
     </div>
   )

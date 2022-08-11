@@ -1,14 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 
 import './Item.css'
 
-const Item = ({image, name, price, description}) => {
+const Item = ({id, image, name, price, description}) => {
   return (
     <>
-      <div className="cardProduct">
+
+      <div className="tarjeta">
+  
+      <div className="card text-white bg-success mb-3 cardProduct">
         <div className="cardImage">
-          <img src={image} alt="img" width="100%" height="100%" />
+          <img src={image} alt="img" max-width="100%" height="92%" />
         </div>
         <div>
           <h1 className="cardTitle">{name}</h1>
@@ -16,9 +20,10 @@ const Item = ({image, name, price, description}) => {
           <p className="cardDescription">{description}</p>
         </div>
 
-      <button className="btn btn-success text-light mb-3">Ver Producto</button>
+      <Link className="btn btn-light text-success mb-3" to={`/products/${id}`}>Ver Producto</Link>
 
-<ItemCount initial={1} stock={5} />
+      </div>
+{/* <ItemCount initial={1} stock={5} /> */}
 
       </div>
     </>

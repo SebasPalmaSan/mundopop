@@ -7,17 +7,17 @@ import './Home.css'
 const Home = () => {
   return (
     <>
-    <ItemListContainer />
+    
     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active carrousel">
-          <img src="./KurtCobain65.jpeg" className="d-block w-10" alt="..."/>
+          <img src="/images/BANNER_DC_PW_01.jpg" className="d-block w-100 banner" alt="..."/>
         </div>
         <div className="carousel-item carrousel">
-          <img src="./CraigJones178.jpeg" className="d-block w-10" alt="..."/>
+          <img src="/images/bannermarvel.jpg" className="d-block w-100 banner" alt="..."/>
         </div>
         <div className="carousel-item carrousel">
-          <img src="./ToyStoryWoody168.jpeg" className="d-block w-10" alt="..."/>
+          <img src="/images/bannerdisney.jpeg" className="d-block w-100 banner" alt="..."/>
         </div>
       </div>
           <Link className="carousel-control-prev" to="#carouselExampleControls" role="button" data-slide="prev">
@@ -28,7 +28,9 @@ const Home = () => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </Link>
-    </div>
+      </div>
+
+      <ItemListContainer />
     </>
   )
 }

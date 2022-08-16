@@ -17,10 +17,11 @@ const ItemDetail = ({ data }) => {
           <p className="itemPrice">${data.price}</p>
           
           <ItemCount stock={data.stock} min={1} />
+          <p className="itemPrice">Stock: {data.stock}</p>
 
         </div>
 
-        <Link to="/" className="btn btn-dark text-light mb-3 mt-3">Volver</Link>
+          <Link to={"/"} className="btn btn-dark text-light mb-5 mt-3 ml-3">Volver</Link>
     </div>
   )
 }

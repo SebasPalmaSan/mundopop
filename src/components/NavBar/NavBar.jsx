@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidjet/CartWidget'
 
 
@@ -9,9 +9,9 @@ const NavBar = () => {
   return (
     <>
     <nav className="navbar navbar-expand-lg bg-light rounded p-2">
-        <Link className="navbar-brand ml-2" to="/">
+        <NavLink className="navbar-brand ml-2" to="/">
             <img src='../images/logo-mundo-pop.jpeg' alt='Logo' width='150'/>
-        </Link>
+        </NavLink>
     <nav className="navbar navbar-light bg-light rounded dark text-center">
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -21,31 +21,36 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                    <Link className="nav-link btn btn-light mr-2 text-success linkSize" to="/">INICIO<span className="sr-only"></span></Link>
+                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">INICIO<span className="sr-only"></span></NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link btn btn-light mr-2 text-success linkSize" to="/products">PRODUCTOS</Link>
+                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/products">PRODUCTOS</NavLink>
                 </li>
                 <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle btn btn-light mr-2 text-success linkSize" to="./categoriasFunkos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <NavLink className="nav-link dropdown-toggle btn btn-light mr-2 text-success linkSize" to="./categoriasFunkos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             CATEGORÍAS
-                        </Link>
+                        </NavLink>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Rock">Rock</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Rock">Rock</NavLink>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Got">Game Of Thrones</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Got">Game Of Thrones</NavLink>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Disney">Disney</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Disney">Disney</NavLink>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Marvel">Marvel</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Marvel">Marvel</NavLink>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/Dc">DC</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Dc">DC</NavLink>
                     <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item bg-light text-success text-center" to="../categories/StrangerThings">Stranger Things</Link>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/StrangerThings">Stranger Things</NavLink>
+                    <div className="dropdown-divider"></div>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/StarWars">Star Wars</NavLink>
+                    <div className="dropdown-divider"></div>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Films">Films</NavLink>
                     </div>
+                    
                 </li>
                 <li className="nav-item">
-                        <Link to='/login' className="nav-link btn btn-light mr-2 text-success linkSize">INICIÁ SESIÓN</Link>
+                        <NavLink to='/login' className="nav-link btn btn-light mr-2 text-success linkSize">INICIÁ SESIÓN</NavLink>
                 </li>
             </ul>
 

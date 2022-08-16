@@ -3,33 +3,31 @@ import dataProducto from '../../data/data'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 
-
-// const id = useParams().id
-const getItem = () => {
-    return new Promise((resolve  => {
-        setTimeout(() => {
-        resolve(dataProducto)
-        }, 1500)
-    }))
-}
 const ItemDetailContainer = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState({})
+    const idUrl  = useParams().id
 
-    // const id = useParams().id
+    const getItem = () => {
+        return new Promise((resolve => {
+            let encontrarProducto = dataProducto.find((item) => item.id === Number(idUrl))
+            setTimeout(() => {
+                resolve(encontrarProducto)
+            }, 1500);
+        }))
+    }
 
     useEffect(() => {
-        getItem().then(products => {
-            setData(products[0])
-        }).catch(error => {
-            console.log(error)
+        getItem().then(product => {
+            setData(product)
         })
-    }, []);
+    }, [])
 
-  return (
-    <div>
-        <ItemDetail data={data} />
-    </div>
-  )
+    return(
+        <main>
+            <ItemDetail data={data} />
+        </main>
+    )
+
 }
 
 export default ItemDetailContainer

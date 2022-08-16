@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidjet/CartWidget'
 
-
 import './NavBar.css'
 
 const NavBar = () => {
@@ -21,11 +20,11 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">INICIO<span className="sr-only"></span></NavLink>
+                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">INICIO</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/products">PRODUCTOS</NavLink>
-                </li>
+                {/* <li className="nav-item">
+                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">PRODUCTOS</NavLink>
+                </li> */}
                 <li className="nav-item dropdown">
                         <NavLink className="nav-link dropdown-toggle btn btn-light mr-2 text-success linkSize" to="./categoriasFunkos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             CATEGORÍAS
@@ -45,7 +44,9 @@ const NavBar = () => {
                     <div className="dropdown-divider"></div>
                         <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/StarWars">Star Wars</NavLink>
                     <div className="dropdown-divider"></div>
-                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Films">Films</NavLink>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/Films">Films, Series & Cartoon</NavLink>
+                    <div className="dropdown-divider"></div>
+                        <NavLink className="dropdown-item bg-light text-success text-center" to="../categories/NBA">NBA</NavLink>
                     </div>
                     
                 </li>

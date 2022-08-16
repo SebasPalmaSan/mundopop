@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import ItemListContainer from './components/ItemList/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/detail/:id" component={ItemDetailContainer} />
         <Route path="/login" component={Login} />
         <Route path="/categories/:categoryId" component={ItemListContainer} />
+        <Route path="/cart" component={Cart} />
       </Switch>
 
     </div>

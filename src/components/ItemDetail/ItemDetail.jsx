@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+//import Cart from '../Cart/Cart'
 import ItemCount from '../ItemCount/ItemCount'
 
 import './ItemDetail.css'
 
 const ItemDetail = ({ data }) => {
+  const [goToCart, setGoToCart] = useState(false);
+
+  const onAdd = (quantity) => {
+    setGoToCart(true);
+  }
+
   return (
     <div className="bg-success itemProduct">
       
@@ -16,9 +23,12 @@ const ItemDetail = ({ data }) => {
           <h1 className="itemName">{data.name}</h1>
           <p className="itemPrice">${data.price}</p>
           
-          <ItemCount stock={data.stock} min={1} />
+          {
+            goToCart
+              ? <Link to='/cart' className="btn btn-primary btn-lg">Terminar Compra</Link>
+              : <ItemCount stock={data.stock} onAdd={onAdd} />
+          }
           <p className="itemPrice">Stock: {data.stock}</p>
-
         </div>
 
           <Link to={"/"} className="btn btn-dark text-light mb-5 mt-3 ml-3">Volver</Link>

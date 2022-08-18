@@ -1,3 +1,6 @@
+![Animation](https://user-images.githubusercontent.com/93328462/184988136-6c99cc2b-f439-464e-88e1-2d4288521ed8.gif)
+![Screenshot 2022-08-16 at 15-07-34 Mundo Pop!](https://user-images.githubusercontent.com/93328462/184949161-91c68f78-4fde-4834-b4fd-a47b2875890d.png)
+![Screenshot 2022-08-16 at 15-08-01 Mundo Pop!](https://user-images.githubusercontent.com/93328462/184949151-4a0cc924-c906-41d0-aa8a-042dd4840f71.png)
 ![Screenshot 2022-08-16 at 13-02-10 Mundo Pop!](https://user-images.githubusercontent.com/93328462/184926227-f4cd4cf9-d3ef-43bf-9fce-4052eb13c0df.png)
 
 ![Screenshot 2022-08-16 at 13-02-26 Mundo Pop!](https://user-images.githubusercontent.com/93328462/184926231-c3fba681-b62f-43f4-a30e-5cae0b7c8eab.png)

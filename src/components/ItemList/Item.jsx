@@ -20,7 +20,7 @@ const Item = ({id, image, name, price, description}) => {
         </div>
         
 
-      <Link className="btn btn-light text-success mb-5" to={`/detail/${id}`}>Ver Producto</Link>
+      <Link className="btn btn-light text-success mb-2" to={`/detail/${id}`}>Ver Producto</Link>
       
 
       </div>

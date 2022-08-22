@@ -1,0 +1,17 @@
+.imgCart{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    max-width: 20%;
+    height: 100%;
+    border: 2px solid rgb(84, 73, 73);
+    border-radius: 5px;
+    float: left;
+}
+
+.itemCart{
+    width: 100%;
+    border: 2px solid rgb(84, 73, 73);
+    border-radius: 5px;
+    display: flex;
+}

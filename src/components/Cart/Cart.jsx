@@ -20,7 +20,7 @@ const Cart = (id) => {
   } else {
     return (
       <main>
-        <h1 className="text-center text-light">TU CARRITO</h1>
+        <h1 className="bg-dark rounded m-2 text-center text-light">TU CARRITO</h1>
         <ul>
           
           {cart.map((item) => {

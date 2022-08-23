@@ -7,7 +7,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762394/Funkos/ToyStoryBuzzLightyear169_jkrdv3.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Disney',
-        stock: 8,
+        stock: 8
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762320/Funkos/EncantoMirabelMadrigal1145_krozin.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Disney',
-        stock: 6,
+        stock: 6
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762280/Funkos/BackToTheFutureMartyMcFly49_oqcpdi.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Films',
-        stock: 5,
+        stock: 5
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762309/Funkos/DCTheFlash208_xrbgja.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Dc',
-        stock: 11,
+        stock: 11
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762338/Funkos/GravityFallsDipperPines240_s8jbss.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Disney',
-        stock: 3,
+        stock: 3
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762335/Funkos/GOTJonSnow26_nfijgo.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Got',
-        stock: 22,
+        stock: 22
     },
     {
         id: 7,
@@ -61,7 +61,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762385/Funkos/STDustin424_ujriiv.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StrangerThings',
-        stock: 15,
+        stock: 15
     },
     {
         id: 8,
@@ -70,7 +70,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,w_928/v1660762396/Funkos/ToyStoryWoody168_gzok8y.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Disney',
-        stock: 9,
+        stock: 9
     },
     {
         id: 9,
@@ -79,7 +79,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762276/Funkos/AxlRose50_xs1ofc.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Rock',
-        stock: 13,
+        stock: 13
     },
     {
         id: 10,
@@ -88,7 +88,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762364/Funkos/MarvelDeadpool20_lv5rrd.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Marvel',
-        stock: 18,
+        stock: 18
     },
     {
         id: 11,
@@ -97,7 +97,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762265/Funkos/AngusYoung91_bfvzjy.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Rock',
-        stock: 7,
+        stock: 7
     },
     {
         id: 12,
@@ -106,7 +106,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762272/Funkos/AntMan_jerxjs.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Marvel',
-        stock: 9,
+        stock: 9
     },
     {
         id: 13,
@@ -115,7 +115,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762289/Funkos/c3po_qaobr1.webp',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StarWars',
-        stock: 6,
+        stock: 6
     },
     {
         id: 14,
@@ -124,7 +124,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762286/Funkos/blueJurassicWorld_asvuf2.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Films',
-        stock: 9,
+        stock: 9
     },
     {
         id: 15,
@@ -133,7 +133,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762312/Funkos/Dexter_ipg0xe.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Films',
-        stock: 4,
+        stock: 4
     },
     {
         id: 16,
@@ -142,7 +142,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762382/Funkos/StarWarsChe_dkndnf.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StarWars',
-        stock: 6,
+        stock: 6
     },
     {
         id: 17,
@@ -151,7 +151,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762303/Funkos/DarthVader_dyc612.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StarWars',
-        stock: 9,
+        stock: 9
     },
     {
         id: 18,
@@ -160,7 +160,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762346/Funkos/harryPotter_rtabxq.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Films',
-        stock: 13,
+        stock: 13
     },
     {
         id: 19,
@@ -169,7 +169,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762388/Funkos/STElevenWithEggos421_cel39m.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StrangerThings',
-        stock: 6,
+        stock: 6
     },
     {
         id: 20,
@@ -178,7 +178,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762369/Funkos/MarvelPeterParker221_fiw7jo.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Marvel',
-        stock: 9,
+        stock: 9
     },
     {
         id: 21,
@@ -187,7 +187,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762379/Funkos/Spiderman_o6y6uo.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Marvel',
-        stock: 12,
+        stock: 12
     },
     {
         id: 22,
@@ -196,7 +196,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762331/Funkos/gabbygabby_zgnxcf.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Disney',
-        stock: 5,
+        stock: 5
     },
     {
         id: 23,
@@ -205,7 +205,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762352/Funkos/KurtCobain65_jmpnvz.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Rock',
-        stock: 3,
+        stock: 3
     },
     {
         id: 24,
@@ -214,7 +214,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762348/Funkos/JackSparrow_u7yben.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Films',
-        stock: 3,
+        stock: 3
     },
     {
         id: 25,
@@ -223,7 +223,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762354/Funkos/lebronJames_yzcvkd.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'NBA',
-        stock: 4,
+        stock: 4
     },
     {
         id: 26,
@@ -232,7 +232,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762357/Funkos/Mandalorian_kjtj7j.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StarWars',
-        stock: 7,
+        stock: 7
     },
     {
         id: 27,
@@ -241,7 +241,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762372/Funkos/MikeStrangerThings_fndcsh.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'StrangerThings',
-        stock: 11,
+        stock: 11
     },
     {
         id: 28,
@@ -250,7 +250,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762392/Funkos/superman_yaqgc3.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'Dc',
-        stock: 19,
+        stock: 19
     },
     {
         id: 29,
@@ -259,7 +259,7 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762390/Funkos/StephenCurry_t8spdd.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'NBA',
-        stock: 8,
+        stock: 8
     },
     {
         id: 30,
@@ -268,8 +268,8 @@ const dataProducto = [
         image: 'https://res.cloudinary.com/dnxlkkx8s/image/upload/c_scale,h_587,w_928/v1660762377/Funkos/Shaq_ae152g.jpg',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit, corporis corrupti voluptates recusandae dolorem laboriosam pariatur earum voluptatum dolore non facere, amet placeat debitis quas, ratione quod aperiam!',
         category: 'NBA',
-        stock: 10,
-    },
+        stock: 10
+    }
 ]
 
 export default dataProducto;

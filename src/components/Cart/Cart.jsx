@@ -4,16 +4,16 @@ import { cartContext } from '../../store/cartContext';
 import ItemCart from '../ItemCart/ItemCart';
 
 const Cart = (id) => {
-  const { cart, removeFromCart, clearCart, totalPrice, totalProduct } = useContext(cartContext);
+  const { cart, removeFromCart, clearCart, totalPrice, totalAmount } = useContext(cartContext);
      const removeItem = () => {
       removeFromCart(id);
   }
-  //console.log(cart)
+  console.log(cart)
 
   if(cart.length === 0){ 
     return (
       <div className="bg-secondary">
-        <h1 className="text-center text-success">No hay Productos en tu carrito</h1>
+        <h1 className="bg-dark text-center text-light m-5 rounded">NO HAY PRODUCTOS EN TU CARRITO</h1>
         <Link to="/" className="btn btn-primary">Volver</Link>
       </div>
       )
@@ -31,6 +31,7 @@ const Cart = (id) => {
                 image={item.image}
                 name={item.name}
                 price={item.price}
+                quantity={item.quantity}
                 removeItem={removeItem}
               />
             )
@@ -46,11 +47,11 @@ const Cart = (id) => {
         <section className="bg-light">
           <h1 className="text-center text-success">RESUMEN DE TU PEDIDO</h1>
           <hr />
-          <h2 className="text-center text-success">Cantidad: {totalProduct}</h2>
+          <h2 className="text-center text-success">Cantidad: {totalAmount()}</h2>
           <hr />
           <h2 className="text-center text-success">Subtotal: ${totalPrice()}</h2>
           <hr />
-          <h2 className="text-center text-success">Envio: $250,00</h2>
+          <h2 className="text-center text-success">Envio: Gratis</h2>
           <hr />
           <h2 className="text-center text-success">Total: ${totalPrice()}</h2>
           <hr />

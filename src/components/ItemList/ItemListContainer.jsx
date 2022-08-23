@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import dataProducto from '../../data/data'
 import ItemList from '../ItemList/ItemList'
 
+import './ItemListContainer.css'
+
 
 
 const ItemListContainer = () => {
@@ -32,7 +34,7 @@ const ItemListContainer = () => {
     
   return (
     <>
-      <div className=" mx-auto d-block bg-dark">
+      <div className=" mx-auto d-block homePage">
       <h1 className="text-center text-light m-5">PRODUCTOS DESTACADOS</h1>
       <ItemList data={data} />
     </div>

@@ -16,7 +16,7 @@ const ItemCart = ({ id, image, name, price, quantity, removeItem }) => {
                     <hr />
                     <h2 className="text-center text-success">CANTIDAD: {quantity}</h2>
                     <hr />
-                    <h2 className="text-center text-success">TOTAL: ${price}</h2>
+                    <h2 className="text-center text-success">TOTAL: ${price * quantity}</h2>
                     <hr />
                     <FontAwesomeIcon className="btn btn-danger m-2" onClick={() => removeItem(id)} icon={faTrashCan} />
                 </div>

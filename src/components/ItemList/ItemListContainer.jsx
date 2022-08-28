@@ -1,36 +1,54 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import dataProducto from '../../data/data'
 import ItemList from '../ItemList/ItemList'
 
+import firestoreDB from '../../database/firestore'
+import { getDocs, collection, query, where } from 'firebase/firestore'
+
 import './ItemListContainer.css'
-
-
 
 const ItemListContainer = () => {
   const [data, setData] = useState([])
   const categoryId = useParams().categoryId
-
-  const getProducts = () => {
-    return new Promise((resolve => {
-      setTimeout(() => {
-        resolve(dataProducto)
-      }, 2000)
-    }))
   
-  }
+  //ITEMS TRAIDOS DESDE BASE DE DATOS - FIREBASE
+  const getProducts = () => {
+    return new Promise((resolve) => {
 
-    useEffect(() => {
-      getProducts().then(products => {
-        let filterItem = dataProducto.filter((item) => item.category === categoryId)
-        if (categoryId === undefined) {
-          setData(products)
-        } else {
-          setData(filterItem)
-        }
+      const productCollection = collection(firestoreDB, 'producto');
+
+      getDocs(productCollection).then(snapshot => {
+        const docsData = snapshot.docs.map(doc => {
+          return { ...doc.data(), id: doc.id }
+        });
+        resolve(docsData)
       })
-    }, [categoryId]);
-
+    })
+  }
+      const getItemsFromDBbyCategory = (categoryId) => {
+        return new Promise((resolve) =>{
+          const productsCollection = collection(firestoreDB, 'producto');
+          const queryProducts = query(productsCollection, where('category', '==', categoryId))
+          getDocs(queryProducts).then(snapshot => {
+            const docsData = snapshot.docs.map(doc => {
+              return { ...doc.data(), id: doc.id }
+            })
+            resolve(docsData);
+          })
+      })
+    }
+    
+    useEffect(() => {
+      if(categoryId){
+        getItemsFromDBbyCategory(categoryId).then((resolve) => {
+          setData(resolve)
+        })
+      } else {
+        getProducts().then((resolve) => {
+          setData(resolve)
+        })
+      }
+    })
     
   return (
     <>

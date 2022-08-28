@@ -6,9 +6,8 @@ import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import {CartProvider} from './store/cartContext';
 
-
 function App() {
-
+  
   return (
     <>
     <BrowserRouter>

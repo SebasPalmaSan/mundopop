@@ -4,7 +4,9 @@ import Login from './components/Login/Login';
 import ItemListContainer from './components/ItemList/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
+import UserCheckout from './components/UserCheckout/UserCheckout';
 import {CartProvider} from './store/cartContext';
+
 
 function App() {
   
@@ -20,6 +22,7 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='categories/:categoryId' element={<ItemListContainer />} />
             <Route path='cart' element={<Cart />} />
+            <Route path='checkout' element={<UserCheckout />} />
           </Routes>
       </CartProvider>
     </div>

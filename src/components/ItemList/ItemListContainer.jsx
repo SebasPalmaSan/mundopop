@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
+import DotSpinner from '../DotSpinners/DotSpinners'
 
-import firestoreDB from '../../database/firestore'
+import {firestoreDB} from '../../database/firestore'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 
 import './ItemListContainer.css'
@@ -52,10 +53,18 @@ const ItemListContainer = () => {
     
   return (
     <>
-      <div className=" mx-auto d-block homePage">
-      <h1 className="text-center text-light m-5">PRODUCTOS DESTACADOS</h1>
+      {data.length === 0 ? 
+      <div className="spinner">
+       <DotSpinner />
+       </div>
+       :
+       <div className=" mx-auto d-block homePage">
+      <h1 className="bg-dark rounded m-2 text-center text-light">PRODUCTOS DESTACADOS</h1>
+      <hr />
       <ItemList data={data} />
     </div>
+      }
+      
 
     </>
   )

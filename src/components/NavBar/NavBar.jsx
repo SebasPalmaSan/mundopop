@@ -22,11 +22,8 @@ const NavBar = () => {
                 <li className="nav-item active">
                     <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">INICIO</NavLink>
                 </li>
-                {/* <li className="nav-item">
-                    <NavLink className="nav-link btn btn-light mr-2 text-success linkSize" to="/">PRODUCTOS</NavLink>
-                </li> */}
                 <li className="nav-item dropdown">
-                        <NavLink className="nav-link dropdown-toggle btn btn-light mr-2 text-success linkSize" to="./categoriasFunkos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <NavLink className="nav-link dropdown-toggle btn btn-light mr-2 text-success linkSize" to="./categories" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             CATEGORÍAS
                         </NavLink>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -58,8 +58,8 @@ const ItemListContainer = () => {
        <DotSpinner />
        </div>
        :
-       <div className=" mx-auto d-block homePage">
-      <h1 className="bg-dark rounded m-2 text-center text-light">PRODUCTOS DESTACADOS</h1>
+       <div className="mx-auto d-block homePage">
+      <h1 className="rounded m-2 text-center text-light">PRODUCTOS DESTACADOS</h1>
       <hr />
       <ItemList data={data} />
     </div>

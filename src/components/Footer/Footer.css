@@ -1,0 +1,14 @@
+.logoFooter{
+    max-width: 4rem;
+    border-radius: 50%;
+}
+
+.derechos{
+    font-size: 1.5rem;
+}
+
+.contacto{
+    display: flex;
+    justify-content: row;
+    font-size: 1.5rem;
+}

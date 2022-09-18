@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
-//import {auth} from '../../database/firestore'
+//import {collection} from 'firebase/firestore'
+import React, { useCallback, useState } from 'react'
+import {auth, firestoreDB} from '../../database/firestore'
+import './Login.css'
 
 const Login = () => {
 
@@ -30,26 +32,46 @@ const Login = () => {
     setError(null)
     console.log('Pasando todas las validaciones')
 
-    // if(register){
-    //   registrar()
-    // }
+    
+      if(register){
+      registrar()
+    }
   }
 
-  // const registrar = useCallback(async() => {
+  // const user = {
+  //   name: user.name,
+  //   password: user.password
+  // }
 
-  //   try {
-  //     const resp = await auth.createUserWithEmailAndPassword(email, password)
-  //     console.log(resp)
+  // const handleSubmit = () => {
+  //   const db = getFirestore();
+  //   const usersCollection = collection(db, 'usuarios');
+  //   addDoc(usersCollection, user)
+  //   .then(({id}) => console.log(id))
+  // }
 
-  //   }catch(err) {
-  //     console.log(err)
-  //     if(err.code === 'auth/invalid-email'){
-  //       setError('El email no es valido')
-  //     }
+  const registrar = useCallback(async() => {
+
+    try {
+      const res = await auth.createUserWithEmailAndPassword(email, password)
+      console.log(res.user)
+      await firestoreDB.collection('usuarios').doc(res.user.email).set({
+        email: res.user.email, password,
+        uid: res.user.uid
+      })
       
-  //   }
+    }catch(err) {
+      console.log(err)
+      if(err.code === 'auth/invalid-email'){
+        setError('El email no es valido')
+      }
+      if(err.code === 'auth/email-already-in-use'){
+        setError('Email no disponible')
+      }
+      
+    }
 
-  // }, [email, password])
+  }, [email, password])
 
   return (
     <div>
@@ -59,7 +81,8 @@ const Login = () => {
           }
         </h1>
         <hr />
-        <div className="row justify-content-center">
+        <section>
+        <div className="form row justify-content-center">
           <div className="col-12 col-sm-8 col-md-6 col-xl-4">
             <form onSubmit={processData}>
               {
@@ -102,6 +125,7 @@ const Login = () => {
 
           </div>
         </div>
+        </section>
     </div>
   )
 }

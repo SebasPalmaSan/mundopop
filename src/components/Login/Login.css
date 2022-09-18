@@ -1,4 +1,5 @@
-.homePage{
+.form{
+    width: 100%;
     background: linear-gradient(64deg, #1ec316, #006198, #1cdaee, #0a7804);
     background-size: 800% 800%;
 
@@ -21,13 +22,4 @@
     0%{background-position:88% 0%}
     50%{background-position:13% 100%}
     100%{background-position:88% 0%}
-}
-
-
-.spinner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
 }

@@ -41,7 +41,7 @@ const Cart = (id) => {
           <div className="bg-secondary row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4" >
               
-              <Link to="/" className="btn btn-primary btn-lg btn-block">Volver</Link>
+              <Link to="/" className="btn btn-primary btn-lg btn-block mb-2">Volver</Link>
             </div>
           </div>
       </>
@@ -91,7 +91,7 @@ const Cart = (id) => {
 
             <section className="row justify-content-center">
               <div  className="col-12 col-sm-8 col-md-6 col-xl-4">
-                <Link to="/" className="btn btn-primary btn-lg btn-block mb-2">Seguí con tu compra</Link>
+                <Link to="/" className="btn btn-primary btn-lg btn-block mt-2 mb-2">Seguí con tu compra</Link>
                 <Link to="/checkout"><button onClick={handleClick} className="btn btn-primary btn-lg btn-block mb-2">Finalizá tu compra</button></Link>
               </div>
             </section>

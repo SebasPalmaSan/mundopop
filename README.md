@@ -36,6 +36,16 @@ Dependecias.
     "web-vitals": "^2.1.4"
     
     
+Tecnologias Utilizadas:
+
+    *ReactJs
+    *HTML
+    *CSS
+    *Javascript
+   
+Base de datos:
+    *Firebase
+    
 Inicio de Proyecto.
 npm i (instalar todas las dependencias)
 npm start (renderizar proyecto)
